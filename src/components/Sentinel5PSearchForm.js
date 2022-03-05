@@ -26,6 +26,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 			<label>Country:
 				<SelectCountry countryCodes={countryCodes} countryProps={countryProps} />
 			</label>
+			<br />
 			<label>Gas:
 				<select
 					{...gasProps}
@@ -33,7 +34,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 					placeholder="gas"
 					value={gasProps.value}
 					required>
-					<option value="methane">Methane</option>
+					<option value="methane">Methane</option> 
 					<option value="ozone">Ozone</option>
 					<option value="carbonmonoxide">Carbon Monoxide</option>
 					<option value="nitrogendioxide">Nitrogen Dioxide</option>
