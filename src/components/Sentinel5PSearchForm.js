@@ -2,8 +2,6 @@ import useInput from '../hooks/useInput';
 import countryCodes from '../json/country-codes.json';
 import SelectCountry from './SelectCountry';
 
-
-
 export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 	const [countryProps, resetCountry] = useInput("us");
 	const [gasProps, resetGas] = useInput("methane");
