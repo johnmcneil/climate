@@ -22,7 +22,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 	}
 
 	return (
-		<form onSubmit={handleSubmit}>
+		<form onSubmit={handleSubmit} className="flexContainer">
 			<label>Country:
 				<SelectCountry countryCodes={countryCodes} countryProps={countryProps} />
 			</label>
