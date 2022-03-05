@@ -20,43 +20,46 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 	}
 
 	return (
-		<form onSubmit={handleSubmit} className="flexContainer">
-			<label>Country:
-				<SelectCountry countryCodes={countryCodes} countryProps={countryProps} />
-			</label>
-			<label>Gas:
-				<select
-					{...gasProps}
-					name="gas"
-					placeholder="gas"
-					value={gasProps.value}
-					required>
-					<option value="methane">Methane</option> 
-					<option value="ozone">Ozone</option>
-					<option value="carbonmonoxide">Carbon Monoxide</option>
-					<option value="nitrogendioxide">Nitrogen Dioxide</option>
-				</select>
-			</label>
-			<label for="begin">Start date:
-				<input 
-					{...beginProps}
-					name="begin"
-					type="date"
-					min="2018-12-31"
-					required
-				/>
-			</label>
-			<label for="end">End date:
-				<input
-					{...endProps}
-					name="end"
-					type="date"
-					min="2018-12-31"
-					required
-				/>
-			</label>
-
-			<input type="submit" value="Submit" />
+		<form onSubmit={handleSubmit}>
+			<div className="formRow">
+				<label>Country:
+					<SelectCountry countryCodes={countryCodes} countryProps={countryProps} />
+				</label>
+				<label>Gas:
+					<select
+						{...gasProps}
+						name="gas"
+						placeholder="gas"
+						value={gasProps.value}
+						required>
+						<option value="methane">Methane</option> 
+						<option value="ozone">Ozone</option>
+						<option value="carbonmonoxide">Carbon Monoxide</option>
+						<option value="nitrogendioxide">Nitrogen Dioxide</option>
+					</select>
+				</label>
+			</div>
+			<div className="formRow">
+				<label for="begin">Start date:
+					<input 
+						{...beginProps}
+						name="begin"
+						type="date"
+						min="2018-12-31"
+						required
+					/>
+				</label>
+				<label for="end">End date:
+					<input
+						{...endProps}
+						name="end"
+						type="date"
+						min="2018-12-31"
+						required
+					/>
+				</label>
+				<input type="submit" value="Submit" />
+			</div>
 		</form>
 	);
 }
