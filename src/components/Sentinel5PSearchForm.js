@@ -40,7 +40,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 					<option value="nitrogendioxide">Nitrogen Dioxide</option>
 				</select>
 			</label>
-			<br />
+			<br /><br />
 			<label for="begin">Start date:
 				<input 
 					{...beginProps}
