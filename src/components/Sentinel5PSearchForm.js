@@ -50,6 +50,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 					required
 				/>
 			</label>
+			<br />
 			<label for="end">End date:
 				<input
 					{...endProps}
