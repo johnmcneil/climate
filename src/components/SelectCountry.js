@@ -8,7 +8,7 @@ export default function SelectCountry({
 }) {
 	console.log("countryProps", countryProps);
 	return (
-		<select
+		<select id="country"
 			{...countryProps}
 			name="country"
 			placeholder="country"
