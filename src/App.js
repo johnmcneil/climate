@@ -19,7 +19,7 @@ export default function SentinelSP5Page() {
 
 	return ( 
 		<div className="sentinelsp5-page">
-			<h3>Charting Greenhouse Gas Emissions</h3>
+			<h3>Charting Emissions</h3>
 			<h4>Source: <a href="https://emissions-api.org/">Sentinel-5P</a> satellite data.</h4>
 			<SentinelSP5SearchForm onSearch={handleSearch}/>
 			<SentinelSP5Chart country={country} gas={gas} begin={begin} end={end} />

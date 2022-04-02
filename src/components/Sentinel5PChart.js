@@ -66,8 +66,6 @@ export default function SentinelSP5Chart({ country, gas, begin, end }) {
     } 
 
     const chartData = prepareChartData(dataAscending, NO2);
-    
-
 
     console.log("chartData", chartData);
 

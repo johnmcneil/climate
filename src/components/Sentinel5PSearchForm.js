@@ -22,12 +22,13 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 	return (
 		<form onSubmit={handleSubmit}>
 			<div className="formRow">
-				<label>Country:
+				<label for="country">Country:
 					<SelectCountry countryCodes={countryCodes} countryProps={countryProps} />
 				</label>
-				<label>Gas:
+				<label for="gas">Gas:
 					<select
 						{...gasProps}
+						id="gas"
 						name="gas"
 						placeholder="gas"
 						value={gasProps.value}
@@ -43,6 +44,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 				<label for="begin">Start date:
 					<input 
 						{...beginProps}
+						id="begin"
 						name="begin"
 						type="date"
 						min="2018-12-31"
@@ -52,6 +54,7 @@ export default function SentinelSP5SearchForm({ onSearch = f => f }) {
 				<label for="end">End date:
 					<input
 						{...endProps}
+						id="end"
 						name="end"
 						type="date"
 						min="2018-12-31"
